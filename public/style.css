@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(15, 153, 163);
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: rgb(20, 116, 129);
+    position: relative;
+    width: 50vw;
+    margin: auto;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#sendFile {
+    margin-top: 15px;
+}
