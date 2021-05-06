@@ -12,9 +12,6 @@ $inputFile.addEventListener("change", () => {
 
     const file = URL.createObjectURL(data);
 
-    console.log(file);
-    console.log(typeFile)
-
     if (typeFile == "application/pdf") {
         $divRender.innerHTML = '';
         const $h3 = document.createElement('h3');
