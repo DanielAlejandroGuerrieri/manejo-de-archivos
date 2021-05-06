@@ -10,9 +10,10 @@ var storage = multer.diskStorage({
     },
     filename: function(req, file, cb) {
         const ext = new extension();
+        const name = file.originalname.split('.')[0];
         cb(
             null,
-            file.fieldname + "-" + Date.now() + ext.getExtension(file.mimetype) //se guarda el nombre del archivo con info de fecha y tipo 
+            name + "-" + Date.now() + ext.getExtension(file.mimetype) //se guarda el nombre del archivo con info de fecha y tipo 
         );
     }
 });
